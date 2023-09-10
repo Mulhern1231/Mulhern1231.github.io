@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+    
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="header_block d-flex flex-column vh-100">
+        <img src="img/Logo.svg" alt="logo" class="mx-auto my-4">
+        <div class="text_block mt-auto text-center mb-5">
+            <a href="#catalog" class="border border-white px-5 py-3 text-white text-decoration-none">
+                <p class="m-0">Каталог продукции</p>
+            </a>
+            <p class="mt-4 width">В De Grand мы не просто предлагаем товары. Мы создаем атмосферу. Мы стилизуем пространство. Мы обеспечиваем комфорт. Мы заботимся о каждой детали, чтобы ваш бизнес сиял особым образом.</p>
+            <div class="mt-3 d-none d-md-block">
+                <a href="#advantages" class="text-white text-decoration-none px-3">Преимущества</a>
+                <a href="#catalog" class="text-white text-decoration-none px-3">Каталог продукции</a>
+                <a href="#contacts" class="text-white text-decoration-none px-3">Контакты</a>
+            </div>
+        </div>
+        <img src="./img/arrow.svg" alt="arrow" class="mx-auto mt-5 mb-3 bouncing">
+    </div>
+    
+    <div class="menu_block">
+        <div class="container pz-x pz-y">
+            <div class="row align-items-center">
+                <!-- Логотип слева -->
+                <div class="col-6 col-md-3">
+                    <img src="./img/Logo2.svg" alt="Logo2" class="d-block">
+                </div>
+                
+                <!-- Ссылки посередине для десктопной версии -->
+                <div class="col-md-6 d-none d-md-block text-center">
+                    <a href="#advantages" class="text-dark text-decoration-none px-3">Преимущества</a>
+                    <a href="#catalog" class="text-dark text-decoration-none px-3">Каталог продукции</a>
+                    <a href="#contacts" class="text-dark text-decoration-none px-3">Контакты</a>
+                </div>
+        
+                <!-- Кнопка "СВЯЗАТЬСЯ" справа для десктопной версии -->
+                <div class="col-md-3 d-none d-md-block text-end">
+                    <a href="#contacts" class="text-dark text-decoration-none">СВЯЗАТЬСЯ</a>
+                </div>
+                
+                <!-- Кнопка "МЕНЮ" для мобильной версии -->
+                <div class="col-6 col-md-8 d-md-none text-end">
+                    <button id="menuToggle" class="btn btn-link text-dark text-decoration-none">МЕНЮ</button>
+                </div>
+                
+                <!-- Выпадающие ссылки для мобильной версии -->
+                <div class="col-12 d-none d-md-none" id="mobileMenu">
+                    <a href="#advantages" class="text-dark text-decoration-none d-block text-center py-2">Преимущества</a>
+                    <a href="#catalog" class="text-dark text-decoration-none d-block text-center py-2">Каталог продукции</a>
+                    <a href="#contacts" class="text-dark text-decoration-none d-block text-center py-2">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="second_block color w-max m-auto">
+        <div class="text-center py-5" id="advantages">
+            <p class="m-0">ПРЕИМУЩЕСТВА</p>
+        </div>
+        <div class="flex">
+            <div class="card-color pz">
+                <div class="pt-5 mt-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                        <g clip-path="url(#clip0_217_111)">
+                        <path d="M32 6H4C3.46957 6 2.96086 6.21071 2.58579 6.58579C2.21071 6.96086 2 7.46957 2 8V28C2 28.5304 2.21071 29.0391 2.58579 29.4142C2.96086 29.7893 3.46957 30 4 30H19L19.57 29.3L20.5 28.16L20.41 28H4V8H32V16.56C32.7597 17.0518 33.4351 17.663 34 18.37V8C34 7.46957 33.7893 6.96086 33.4142 6.58579C33.0391 6.21071 32.5304 6 32 6Z" fill="#181818"/>
+                        <path d="M7 12H24V13.6H7V12Z" fill="#181818"/>
+                        <path d="M7 16H18V17.6H7V16Z" fill="#181818"/>
+                        <path d="M7 23H17V24.6H7V23Z" fill="#181818"/>
+                        <path d="M27.46 17.23C26.1803 17.2198 24.9274 17.5959 23.8648 18.3092C22.8023 19.0224 21.9797 20.0396 21.5044 21.2278C21.0291 22.4159 20.9233 23.7199 21.2009 24.9691C21.4784 26.2184 22.1263 27.3548 23.06 28.23L21.12 30.6L22.02 34.21L25.68 29.75C26.8385 30.0926 28.0715 30.0926 29.23 29.75L32.89 34.21L33.79 30.6L31.85 28.23C32.7837 27.3548 33.4316 26.2184 33.7091 24.9691C33.9867 23.7199 33.8809 22.4159 33.4056 21.2278C32.9303 20.0396 32.1077 19.0224 31.0452 18.3092C29.9826 17.5959 28.7297 17.2198 27.45 17.23H27.46ZM27.46 27.91C26.6102 27.8982 25.7829 27.6354 25.0821 27.1546C24.3812 26.6739 23.8381 25.9967 23.5211 25.2082C23.2041 24.4197 23.1272 23.555 23.3003 22.723C23.4733 21.8909 23.8884 21.1286 24.4935 20.5318C25.0986 19.935 25.8666 19.5304 26.701 19.3689C27.5354 19.2075 28.3989 19.2962 29.1829 19.6241C29.967 19.952 30.6366 20.5044 31.1076 21.2118C31.5786 21.9193 31.8299 22.7501 31.83 23.6C31.8194 24.7502 31.3537 25.8494 30.5348 26.6571C29.7158 27.4649 28.6103 27.9153 27.46 27.91Z" fill="#181818"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_217_111">
+                        <rect width="36" height="36" fill="white"/>
+                        </clipPath>
+                        </defs>
+                    </svg>
+                    <h5 class='mt-2'>ГАРАНТИЯ КАЧЕСТВА</h5>
+                    <p class="p_opacity">Мы предлагаем только тщательно отобранные товары от надежных производителей.</p>
+                </div>
+            </div>
+            <div class="card-color pz">
+                <div class="pt-5 mt-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="37" height="36" viewBox="0 0 37 36" fill="none">
+                        <g clip-path="url(#clip0_217_181)">
+                          <path d="M32.7633 8.34998L19.7633 2.13997C19.6277 2.07444 19.479 2.04041 19.3283 2.04041C19.1777 2.04041 19.029 2.07444 18.8933 2.13997L3.89334 9.37997C3.72317 9.46102 3.57937 9.58852 3.47852 9.74775C3.37767 9.90699 3.32387 10.0915 3.32334 10.28V26.83C3.32266 27.0251 3.37911 27.2162 3.48572 27.3797C3.59234 27.5432 3.74446 27.6719 3.92334 27.75L16.9233 33.94C17.059 34.0055 17.2077 34.0395 17.3583 34.0395C17.509 34.0395 17.6577 34.0055 17.7933 33.94L32.7933 26.7C32.9635 26.6189 33.1073 26.4914 33.2082 26.3322C33.309 26.173 33.3628 25.9885 33.3633 25.8V9.24997C33.3602 9.05822 33.3019 8.87142 33.1955 8.71185C33.0891 8.55228 32.9391 8.42666 32.7633 8.34998ZM19.3333 4.14997L30.2633 9.36997L25.2133 11.81L14.5433 6.45997L19.3333 4.14997ZM17.3333 15.64L6.33334 10.41L12.2333 7.55997L22.9333 12.91L17.3333 15.64ZM5.33334 12.13L16.3333 17.4V31.46L5.33334 26.2V12.13ZM18.3333 31.45V17.36L31.3333 11.07V25.17L18.3333 31.45Z" fill="#181818"/>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_217_181">
+                            <rect width="36" height="36" fill="white" transform="translate(0.333344)"/>
+                          </clipPath>
+                        </defs>
+                    </svg>
+                    <h5 class='mt-2'>Оперативные поставки</h5>
+                    <p class="p_opacity">Ваши заказы доставляются точно в срок, чтобы ваш бизнес всегда был впереди.</p>
+                </div>
+            </div>
+            <div class="card-color pz">
+                <div class="pt-5 mt-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="37" height="36" viewBox="0 0 37 36" fill="none">
+                        <g clip-path="url(#clip0_217_558)">
+                          <path d="M13.9966 32C15.2393 32 16.2466 30.9926 16.2466 29.75C16.2466 28.5074 15.2393 27.5 13.9966 27.5C12.754 27.5 11.7466 28.5074 11.7466 29.75C11.7466 30.9926 12.754 32 13.9966 32Z" fill="#181818"/>
+                          <path d="M27.6666 32C28.9093 32 29.9166 30.9926 29.9166 29.75C29.9166 28.5074 28.9093 27.5 27.6666 27.5C26.424 27.5 25.4166 28.5074 25.4166 29.75C25.4166 30.9926 26.424 32 27.6666 32Z" fill="#181818"/>
+                          <path d="M33.7466 5.36999C33.6536 5.25527 33.5363 5.1626 33.4031 5.09862C33.27 5.03465 33.1243 5.00096 32.9766 4.99999H12.1566L12.8066 6.99999H31.6666L28.9966 19H13.9966L9.42661 4.52999C9.37718 4.37645 9.29134 4.23714 9.17642 4.12396C9.06149 4.01077 8.92089 3.92707 8.76661 3.87999L4.66661 2.61999C4.54055 2.58125 4.40808 2.56772 4.27678 2.58017C4.14549 2.59262 4.01793 2.63082 3.90139 2.69257C3.66603 2.81728 3.48985 3.03038 3.41161 3.28499C3.33338 3.53959 3.35948 3.81486 3.4842 4.05021C3.60891 4.28557 3.82201 4.46175 4.07661 4.53999L7.66661 5.63999L12.2566 20.14L10.6166 21.48L10.4866 21.61C10.081 22.0775 9.85102 22.6718 9.83641 23.2906C9.82181 23.9094 10.0235 24.5139 10.4066 25C10.6792 25.3314 11.0255 25.5945 11.418 25.7682C11.8104 25.9418 12.238 26.0212 12.6666 26H29.3566C29.6218 26 29.8762 25.8946 30.0637 25.7071C30.2513 25.5196 30.3566 25.2652 30.3566 25C30.3566 24.7348 30.2513 24.4804 30.0637 24.2929C29.8762 24.1053 29.6218 24 29.3566 24H12.5066C12.3915 23.9961 12.2793 23.9625 12.1809 23.9025C12.0825 23.8426 12.0012 23.7583 11.9449 23.6577C11.8886 23.5572 11.8592 23.4439 11.8595 23.3286C11.8598 23.2134 11.8898 23.1002 11.9466 23L14.3566 21H29.7966C30.0278 21.0056 30.2538 20.931 30.4361 20.7888C30.6184 20.6466 30.7458 20.4456 30.7966 20.22L33.9666 6.21999C33.997 6.0709 33.993 5.91685 33.9549 5.76955C33.9168 5.62225 33.8455 5.4856 33.7466 5.36999Z" fill="#181818"/>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_217_558">
+                            <rect width="36" height="36" fill="white" transform="translate(0.666626)"/>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    <h5 class='mt-2'>Широкий каталог продукции</h5>
+                    <p class="p_opacity">От текстиля до оборудования – у нас есть всё, что вам нужно.</p>
+                </div>
+            </div>
+            <div class="card-color pz">
+                <div class="pt-5 mt-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                        <g clip-path="url(#clip0_217_239)">
+                          <path d="M18 2.25C15.0826 2.25 12.2847 3.40893 10.2218 5.47183C8.15892 7.53473 6.99999 10.3326 6.99999 13.25C6.98256 14.8487 7.3243 16.431 7.99999 17.88C8.33477 18.4967 8.70887 19.0913 9.11999 19.66C9.92106 20.7338 10.5924 21.8986 11.12 23.13C11.483 24.4334 11.6812 25.7773 11.71 27.13H13.71C13.6793 25.5424 13.4406 23.9656 13 22.44C12.4228 21.0476 11.6773 19.7311 10.78 18.52C10.4171 18.0265 10.0832 17.5123 9.77999 16.98C9.24271 15.8041 8.97616 14.5226 8.99999 13.23C8.99999 10.8338 9.95189 8.53568 11.6463 6.84129C13.3407 5.1469 15.6388 4.195 18.035 4.195C20.4312 4.195 22.7293 5.1469 24.4237 6.84129C26.1181 8.53568 27.07 10.8338 27.07 13.23C27.0718 14.5355 26.7778 15.8244 26.21 17C25.9068 17.5323 25.5729 18.0465 25.21 18.54C24.3176 19.7454 23.5755 21.0551 23 22.44C22.5577 23.972 22.319 25.5556 22.29 27.15H24.29C24.3187 25.7973 24.517 24.4534 24.88 23.15C25.4076 21.9186 26.0789 20.7538 26.88 19.68C27.2927 19.0985 27.6668 18.4905 28 17.86C28.6757 16.411 29.0174 14.8287 29 13.23C28.9947 10.3161 27.8334 7.52333 25.7711 5.46475C23.7088 3.40617 20.9139 2.25 18 2.25Z" fill="#181818"/>
+                          <path d="M18.63 15.51C18.48 15.3604 18.2768 15.2764 18.065 15.2764C17.8532 15.2764 17.65 15.3604 17.5 15.51L14.5 18.51L17.36 21.64V27.18H19V21L16.76 18.55L18.65 16.66C18.7258 16.5841 18.7856 16.4937 18.8258 16.3941C18.866 16.2946 18.8857 16.1881 18.8838 16.0808C18.882 15.9735 18.8585 15.8676 18.8149 15.7696C18.7713 15.6715 18.7084 15.5832 18.63 15.51Z" fill="#181818"/>
+                          <path d="M23.86 29.15H12.11C11.8978 29.15 11.6943 29.2343 11.5443 29.3843C11.3943 29.5344 11.31 29.7379 11.31 29.95C11.31 30.1622 11.3943 30.3657 11.5443 30.5157C11.6943 30.6657 11.8978 30.75 12.11 30.75H23.86C24.0722 30.75 24.2757 30.6657 24.4257 30.5157C24.5757 30.3657 24.66 30.1622 24.66 29.95C24.66 29.7379 24.5757 29.5344 24.4257 29.3843C24.2757 29.2343 24.0722 29.15 23.86 29.15Z" fill="#181818"/>
+                          <path d="M22 32.15H14C13.7878 32.15 13.5844 32.2343 13.4343 32.3843C13.2843 32.5344 13.2 32.7379 13.2 32.95C13.2 33.1622 13.2843 33.3657 13.4343 33.5157C13.5844 33.6657 13.7878 33.75 14 33.75H22C22.2122 33.75 22.4157 33.6657 22.5657 33.5157C22.7157 33.3657 22.8 33.1622 22.8 32.95C22.8 32.7379 22.7157 32.5344 22.5657 32.3843C22.4157 32.2343 22.2122 32.15 22 32.15Z" fill="#181818"/>
+                          <path d="M17.32 10.89L14.59 13.62C14.4521 13.7722 14.378 13.9716 14.3831 14.1769C14.3881 14.3822 14.4719 14.5777 14.6172 14.7229C14.7624 14.8681 14.9579 14.9519 15.1632 14.9569C15.3684 14.962 15.5678 14.8879 15.72 14.75L18.45 12C18.5303 11.9272 18.595 11.8389 18.6401 11.7404C18.6853 11.6419 18.7099 11.5352 18.7126 11.4269C18.7153 11.3185 18.6959 11.2108 18.6557 11.1102C18.6154 11.0095 18.5552 10.9181 18.4785 10.8415C18.4019 10.7649 18.3105 10.7046 18.2099 10.6644C18.1092 10.6241 18.0015 10.6048 17.8932 10.6074C17.7848 10.6101 17.6781 10.6347 17.5796 10.6799C17.4811 10.725 17.3928 10.7897 17.32 10.87V10.89Z" fill="#181818"/>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_217_239">
+                            <rect width="36" height="36" fill="white"/>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    <h5 class='mt-2'>индивидуальные размеры</h5>
+                    <p class="p_opacity">Мы поставляем продукцию, соответствующую вашим уникальным потребностям.</p>
+                </div>
+            </div>
+            <div class="card-color pz">
+                <div class="pt-5 mt-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="37" height="36" viewBox="0 0 37 36" fill="none">
+                        <g clip-path="url(#clip0_217_309)">
+                          <path d="M26.8733 18C26.8692 16.6553 26.725 15.3148 26.4433 14H30.0433C29.8579 13.4515 29.634 12.9169 29.3733 12.4H26.0233C25.3936 10.296 24.4168 8.31207 23.1333 6.52998C22.3133 6.18518 21.4583 5.93035 20.5833 5.76998C22.3417 7.65921 23.6689 9.90766 24.4733 12.36H19.0833V5.59998H17.5833V12.37H12.1933C12.9994 9.91322 14.3302 7.66117 16.0933 5.76998C15.2221 5.92768 14.3705 6.17914 13.5533 6.51998C12.2648 8.2946 11.2813 10.2717 10.6433 12.37H7.27334C7.00791 12.8963 6.78065 13.441 6.59334 14H10.2233C9.94163 15.3148 9.79752 16.6553 9.79334 18C9.7961 19.4708 9.96382 20.9366 10.2933 22.37H6.75334C6.96022 22.9305 7.20753 23.4753 7.49334 24H10.7233C11.3355 25.9158 12.2431 27.7242 13.4133 29.36C14.2513 29.7194 15.1267 29.9844 16.0233 30.15C14.3913 28.3697 13.1361 26.2778 12.3333 24H17.5933V30.34H19.0933V24H24.3333C23.5279 26.2787 22.2692 28.3708 20.6333 30.15C21.5342 29.9786 22.413 29.7069 23.2533 29.34C24.4217 27.7104 25.3292 25.9088 25.9433 24H29.1433C29.4278 23.485 29.6751 22.9503 29.8833 22.4H26.3333C26.6786 20.9583 26.8597 19.4823 26.8733 18ZM17.5833 22.37H11.8433C11.1393 19.6178 11.1084 16.7366 11.7533 13.97H17.5833V22.37ZM24.8233 22.37H19.0833V14H24.9133C25.2006 15.3137 25.3415 16.6552 25.3333 18C25.3415 19.4719 25.1702 20.9394 24.8233 22.37Z" fill="#181818"/>
+                          <path d="M18.3334 2C15.1688 2 12.0754 2.93838 9.44423 4.69649C6.81304 6.45459 4.76228 8.95345 3.55128 11.8771C2.34028 14.8007 2.02342 18.0177 2.64079 21.1214C3.25815 24.2251 4.782 27.0761 7.01964 29.3137C9.25728 31.5513 12.1082 33.0752 15.2119 33.6926C18.3156 34.3099 21.5327 33.9931 24.4563 32.7821C27.3799 31.5711 29.8788 29.5203 31.6369 26.8891C33.395 24.2579 34.3334 21.1645 34.3334 18C34.3334 13.7565 32.6476 9.68687 29.6471 6.68629C26.6465 3.68571 22.5768 2 18.3334 2ZM18.3334 32C15.5644 32 12.8577 31.1789 10.5554 29.6406C8.25308 28.1022 6.45866 25.9157 5.39904 23.3576C4.33941 20.7994 4.06216 17.9845 4.60236 15.2687C5.14255 12.553 6.47592 10.0584 8.43386 8.1005C10.3918 6.14257 12.8864 4.8092 15.6021 4.26901C18.3178 3.72881 21.1328 4.00606 23.6909 5.06569C26.2491 6.12531 28.4356 7.91973 29.9739 10.222C31.5123 12.5243 32.3334 15.2311 32.3334 18C32.3334 21.713 30.8584 25.274 28.2328 27.8995C25.6073 30.525 22.0464 32 18.3334 32Z" fill="#181818"/>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_217_309">
+                            <rect width="36" height="36" fill="white" transform="translate(0.333344)"/>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    <h5 class='mt-2'>Известные производители</h5>
+                    <p class="p_opacity">Работаем с мировыми брендами, чтобы ваш выбор всегда был на уровне.</p>
+                </div>
+            </div>
+            <div class="card-color pz">
+                <div class="pt-5 mt-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="37" height="36" viewBox="0 0 37 36" fill="none">
+                        <g clip-path="url(#clip0_217_251)">
+                          <path d="M33.8266 19.13L20.2466 5.55004C20.0658 5.3725 19.8517 5.2325 19.6166 5.1381C19.3815 5.04371 19.13 4.99678 18.8766 5.00004H16.7866L32.4166 20.45L21.8866 31.07C22.0658 31.2493 22.2786 31.3916 22.5129 31.4886C22.7471 31.5857 22.9981 31.6356 23.2516 31.6356C23.5051 31.6356 23.7562 31.5857 23.9904 31.4886C24.2246 31.3916 24.4374 31.2493 24.6166 31.07L33.8266 21.86C34.0059 21.6808 34.1482 21.468 34.2452 21.2338C34.3422 20.9996 34.3922 20.7486 34.3922 20.495C34.3922 20.2415 34.3422 19.9905 34.2452 19.7563C34.1482 19.5221 34.0059 19.3093 33.8266 19.13Z" fill="#181818"/>
+                          <path d="M8.47661 12.4701C9.21115 12.4701 9.80661 11.8746 9.80661 11.1401C9.80661 10.4055 9.21115 9.81006 8.47661 9.81006C7.74207 9.81006 7.14661 10.4055 7.14661 11.1401C7.14661 11.8746 7.74207 12.4701 8.47661 12.4701Z" fill="#181818"/>
+                          <path d="M28.4466 19.17L14.8666 5.58C14.6883 5.39704 14.4753 5.25151 14.2401 5.15191C14.0048 5.05232 13.7521 5.00067 13.4966 5H4.27662C3.76475 5 3.27385 5.20334 2.9119 5.56528C2.54996 5.92723 2.34662 6.41813 2.34662 6.93V16.15C2.34731 16.4031 2.39803 16.6535 2.49585 16.8869C2.59367 17.1203 2.73667 17.3321 2.91662 17.51L16.5066 31.1C16.6858 31.2793 16.8986 31.4215 17.1329 31.5186C17.3671 31.6156 17.6181 31.6656 17.8716 31.6656C18.1251 31.6656 18.3762 31.6156 18.6104 31.5186C18.8446 31.4215 19.0574 31.2793 19.2366 31.1L28.4466 21.89C28.8057 21.5284 29.0072 21.0396 29.0072 20.53C29.0072 20.0204 28.8057 19.5316 28.4466 19.17ZM17.9266 29.69L4.35662 16.15V7H13.4566L27.0366 20.48L17.9266 29.69Z" fill="#181818"/>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_217_251">
+                            <rect width="36" height="36" fill="white" transform="translate(0.666626)"/>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    <h5 class='mt-2'>Гибкая ценовая политика</h5>
+                    <p class="p_opacity">Мы понимаем важность бюджета – наши цены конкурентоспособны.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="second_block color w-max m-auto">
+        <div class="text-center py-5" id="catalog">
+            <p class="m-0">КАТАЛОГ ПРОДУКЦИИ</p>
+        </div>
+  
+
+        <div class="container p-0">
+            <div class="row no-gutters custom-gutter m-0 w-max">
+                <a href="#" class="col-md-4 p-0">
+                    <div class="box pz card1 pt-5">     
+                        <div class="pt-5 mt-5">
+                            <h5 class="text-white">Косметика для гостиниц</h5>
+                            <ul class="list-unstyled p_opacity">
+                                <li class="arrow-item">Гели и шампуни</li>
+                                <li class="arrow-item">Мыло</li>
+                                <li class="arrow-item">Бритвенные наборы</li>
+                                <li class="arrow-item">Швейные наборы и др</li>
+                            </ul>
+                        </div>                        
+                    </div>
+                </a>
+
+                <a href="#" class="col-md-4 p-0">
+                    <div class="box pz card2 pt-5">     
+                        <div class="pt-5 mt-5">
+                            <h5 class="text-white">Постельное белье</h5>
+                            <ul class="list-unstyled p_opacity">
+                                <li class="arrow-item">Простыни</li>
+                                <li class="arrow-item">Пододеяльники</li>
+                                <li class="arrow-item">Наматрасники</li>
+                                <li class="arrow-item">Наволочки и тд.</li>
+                            </ul>
+                        </div>                        
+                    </div>
+                </a>
+
+                
+                <a href="#" class="col-md-4 p-0">
+                    <div class="box pz tall-box card5 pt-5">     
+                        <div class="pt-5 mt-5">
+                            <h5 class="text-white">МАХРОВЫЕ ИЗДЕЛИЯ</h5>
+                            <ul class="list-unstyled p_opacity">
+                                <li class="arrow-item">Детские и взрослые халаты</li>
+                                <li class="arrow-item">Тапочки</li>
+                                <li class="arrow-item">Полотенца</li>
+                                <li class="arrow-item">Брендирование</li>
+                            </ul>
+                        </div>                        
+                    </div>
+                </a>
+
+                
+                <a href="#" class="col-md-4 p-0">
+                    <div class="box pz card3 pt-5">     
+                        <div class="pt-5 mt-5">
+                            <h5 class="text-white">Оборудование для гостиниц</h5>
+                            <ul class="list-unstyled p_opacity">
+                                <li class="arrow-item">Фены</li>
+                                <li class="arrow-item">Минибары</li>
+                                <li class="arrow-item">Сейфы</li>
+                                <li class="arrow-item">Чайные станции</li>
+                            </ul>
+                        </div>                        
+                    </div>
+                </a>
+
+                <a href="#" class="col-md-4 p-0">
+                    <div class="box pz card4 pt-5">     
+                        <div class="pt-5 mt-5">
+                            <h5 class="text-white">Аксессуары и мебель для гостиниц</h5>
+                            <ul class="list-unstyled p_opacity">
+                                <li class="arrow-item">Кровати</li>
+                                <li class="arrow-item">Машинки для чистки обуви</li>
+                                <li class="arrow-item">Вывески на дверь</li>
+                                <li class="arrow-item">Расчески и др</li>
+                            </ul>
+                        </div>                        
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text_block_t pz">
+        <p>Мы не ограничиваемся тем, что представлено на нашем сайте. Наша компания с удовольствием поможет вам найти идеальные решения. Будь то гели, мыло, скатерть, посуда или другие товары для гостиницы – мы готовы вести поиск вместе с вами. Наш богатый опыт всегда к вашим услугам, помогая воплотить в жизнь самые амбициозные идеи. Ваше удовлетворение - наш главный приоритет.</p>
+    </div>
+
+    <footer class="container">
+        <div class="row">
+            <div class="col-md-6 border-solid pz-x">
+                <div class="height-100 mt-3">
+                    <img src="./img/Logo2.svg" alt="logo">
+                </div>
+                <div class="mt-2">
+                    <h5 class="p_opacity">МЕНЮ</h5>
+                    <ul class="list-unstyled">
+                        <a href="#advantages" class="text-dark"><li class="mt-3">Преимущества</li></a>
+                        <a href="#catalog" class="text-dark"><li class="mt-2">Каталог продукции</li></a>
+                        <a href="#contacts" class="text-dark"><li class="mt-2">Контакты</li></a>
+                    </ul>
+                </div> 
+                <h5 class="mt-5">© 2023 ООО «ДЕ ГРАНД»</h5> 
+            </div>
+            <div class="col-md-6 border-solid pz-x">
+                <div class="height-100 mt-3">
+                    <p>Если у вас возникли вопросы или вы хотите сделать заказ, наши специалисты всегда готовы помочь. Свяжитесь с нами любым удобным для вас способом.</p>
+                </div>
+                <div class="mt-2" id="contacts">
+                    <h5>КОНТАКТЫ</h5>
+                    <ul class="list-unstyled">
+                        <li class="mt-3">Адрес: г. Минск, ул. Платонова 34, офис 404</li>
+                        <li class="mt-2">Телефон: <a href="tel:+375296780948" class="text-dark">+375 29 678 09 48</a></li>
+                        <li class="mt-2">Email: <a href="mailto:degrand1202@gmail.com" class="text-dark">degrand1202@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="flex-rigth">
+                    <a href="#" class="circle">
+                        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                    </a>
+                </div> 
+            </div>
+        </div>
+    </footer>
+    
+
+
+
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script>
+
+        $(document).ready(function() {
+            $("#menuToggle").click(function() {
+                $("#mobileMenu").toggleClass("d-none");
+            });
+        });
+
+        window.addEventListener('scroll', function() {
+            const menuBlock = document.querySelector('.menu_block');
+            const screenHeight = window.innerHeight;
+
+            // Проверка на наличие блока-заполнителя
+            let placeholder = document.querySelector('.menu-placeholder');
+
+            if (window.scrollY >= screenHeight) {
+                // Если блок-заполнитель еще не создан, создаем его
+                if (!placeholder) {
+                    placeholder = document.createElement('div');
+                    placeholder.classList.add('menu-placeholder');
+                    placeholder.style.height = `${menuBlock.offsetHeight}px`;
+                    menuBlock.parentNode.insertBefore(placeholder, menuBlock);
+                }
+                menuBlock.classList.add('fixed-menu');
+            } else {
+                // Если блок-заполнитель существует, удаляем его
+                if (placeholder) {
+                    placeholder.remove();
+                }
+                menuBlock.classList.remove('fixed-menu');
+            }
+        });
+
+        function hideMobileMenu() {
+            var mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.add('d-none');
+        }
+
+        var menuLinks = document.querySelectorAll('#mobileMenu a');
+        menuLinks.forEach(function(link) {
+            link.addEventListener('click', hideMobileMenu);
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var menuBlockHeight = document.querySelector('.menu_block').offsetHeight;
+
+            document.addEventListener('click', function(event) {
+                if (!event.target.matches('a[href^="#"]')) return;
+                event.preventDefault();
+
+                var targetID = event.target.getAttribute('href');
+                var targetElement = document.querySelector(targetID);
+                var targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - menuBlockHeight;
+
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+
+
+    </script>
+</body>
+</html>
